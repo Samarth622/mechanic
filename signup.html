@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-light">
+        <a href="#" class="navbar-brand"><h3>Mechanic's Help</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupport" aria-controls="navbarsupport" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-lg"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsupport">
+            <ul navbar-nav ml-auto>
+                <li class="nav-item"><a class="nav-link" href="Project.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="signUp">
+            <h3>Create Your Account</h3>
+            <input class="w100" type="text" placeholder="Full Name" reqired autocomplete='off' />
+            <input type="text" placeholder="Mobile no." reqired />
+            <input type="text" placeholder="User Id" reqired />
+            <input type="password" placeholder="Password" reqired />
+            <button class="form-btn sx log-in" type="button">Mechanic Signup</button>
+            <button class="form-btn dx" type="submit">User signup</button>
+        </form>
+        <form class="signIn">
+            <h3>Create Your Account</h3>
+            <input type="text" placeholder="Full Name" autocomplete='off' reqired />
+            <input type="text" placeholder="Mobile no." reqired />
+            <input type="text" placeholder="Mechanic Id" reqired />
+            <input type="password" placeholder="Password" reqired />
+            <button class="form-btn sx back" type="button">Back</button>
+            <button class="form-btn dx" type="submit">Mechanic signup</button>
+        </form>
+    </div>
+
+    <script>
+
+        $(".log-in").click(function () {
+            $(".signIn").addClass("active-dx");
+            $(".signUp").addClass("inactive-sx");
+            $(".signUp").removeClass("active-sx");
+            $(".signIn").removeClass("inactive-dx");
+        });
+
+        $(".back").click(function () {
+            $(".signUp").addClass("active-sx");
+            $(".signIn").addClass("inactive-dx");
+            $(".signIn").removeClass("active-dx");
+            $(".signUp").removeClass("inactive-sx");
+        });
+
+    </script>
+</body>
+
+</html>

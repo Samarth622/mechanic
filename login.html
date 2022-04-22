@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Login </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-light">
+        <a href="#" class="navbar-brand"><h3>Mechanic's Help</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupport" aria-controls="navbarsupport" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon-lg"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsupport">
+            <ul navbar-nav ml-auto>
+                <li class="nav-item"><a class="nav-link" href="Project.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <h1 id="qwerty">Login</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="sam">
+                    <h2>For User</h2>
+                    <p>If you want any help related<br> to any vehicle.</p>
+                    <div class="ab">
+                        <button class="btn btn-default btn-light" data-toggle="modal"
+                            data-target="#myModal">Login</button>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Login for User</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="ph">UserId:</label>
+                                        <input type="text" class="form-control" id="ph">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                </div>
+
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" id="ch">
+                                        <input type="checkbox" class="form-check-input" value="">Remember me
+                                    </label>
+                                    
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" type="submit"
+                                        data-dismiss="modal">Login</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zx">
+                        <p>Don't have an account?<a href="signup.html" class="aq">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="sat">
+                    <h2>For Mechanics</h2>
+                    <p>Helps those, Who want help.</p>
+                    <div class="ba">
+                        <button class="btn btn-default btn-light" data-toggle="modal"
+                            data-target="#mymechanic">Login</button>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="mymechanic">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Login for Mechanic</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="ph">MechanicId:</label>
+                                        <input type="text" class="form-control" id="ph">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                    </div>
+                                </div>
+
+                                <div class="form-check-inline">
+                                    <label class="form-check-label" id="ch">
+                                        <input type="checkbox" class="form-check-input" value="">Remember me
+                                    </label>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Login</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zx">
+                        <p>Don't have an account?<a href="signup.html" class="aq">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Mechanic</h5>
+                    <p>"If your trust is in man, your joy will soon be buried in the cemetery.
+                        If you hope is in cars, your happiness will soon be found in the mechanic shop.".</p>
+
+                </div>
+                <!-- Grid column -->
+
+
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="cv">guptasamarth709@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="cv">+91 8881497050</p>
+                        </li>
+                        <li>
+                            <p class="cv">+91 8736934451</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="signup.html" class="btn btn-danger btn-rounded">Sign up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fa fa-facebook fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fa fa-twitter fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fa fa-google-plus fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fa fa-linkedin fa-3x"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fa fa-envelope fa-3x"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <hr>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="#"> Mechanic's Help</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+
+</body>
+
+</html>
